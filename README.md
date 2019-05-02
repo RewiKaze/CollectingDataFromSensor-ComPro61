@@ -1,6 +1,6 @@
 # Mini Project: Data Collecting From Sensor
 
-![](https://raw.githubusercontent.com/RewiKaze/CollectingDataFromSensor-ComPro61/master/%E0%B8%A3%E0%B8%B9%E0%B8%9B/Data Collecting From Sensor.jpg)
+[![Data-Collecting-From-Sensor.jpg](https://i.postimg.cc/Nf4gRH27/Data-Collecting-From-Sensor.jpg)](https://postimg.cc/gnxFWrDn)
 
   สวัสดีครับ ชิ้นงานนี้ได้มีแนวคิดริเริ่มมาจาก ถ้าเราอยากจะนับจำนวนคนโดยที่เราไม่ต้องมานับเอง จะใช้วิธีไหนได้บ้าง
 จึงเกิดออกมาเป็นโปรเจคนี้ขึ้นมา โดยเราจะให้เซ็นเซอร์ของเราเป็นตัวนับให้ แล้วนำข้อมูลที่ได้จากเซ็นเซอร์นั้นเก็บไว้
