@@ -23,9 +23,30 @@
 * วิธีการติดตั้งโปรแกรม Arduino [Click!](https://www.youtube.com/watch?v=dMujuIKpWdM)
 * วิธีการติดตั้งไลบรารี่ต่างๆ [Click!](https://www.youtube.com/watch?v=tO4FLMQ0MHY)
 ### เมื่อทำการติดตั้ง Program เรียบร้อยแล้ว ก็ให้โหลด Library ตามนี้ เพื่อที่จะนำมาใช้ในโปรเจคนี้
-* Libraries ต่างๆที่ใช้ในงาน [Click!](https://drive.google.com/file/d/1k1BCT2TOJzD1AW1WwWDxZJYWxiFqph7v/view?usp=sharing)
+* Adafruit Unified Sensor Driver [Click!](https://github.com/adafruit/Adafruit_Sensor)
+* DHT Sensor [Click!](https://github.com/adafruit/DHT-sensor-library)
+* Firebase Arduino [Click!](https://github.com/FirebaseExtended/firebase-arduino)
+* ArduinoJson [Click!](https://github.com/bblanchon/ArduinoJson)
 
 ## Setting วิธีการตั้งค่าเพื่อเริ่มใช้ชิ้นงาน
+1.ทำการสร้างโครงการฐานข้อมูลที่ Firebase ของ Google [Click!](https://console.firebase.google.com/u/0/) ตั้งชื่อโครงการ สามารถดูตัวอย่างได้ตามภาพ
+![](https://raw.githubusercontent.com/RewiKaze/CollectingDataFromSensor-ComPro61/master/%E0%B8%A3%E0%B8%B9%E0%B8%9B/firebase%201.png)
+2.เมื่อสร้างเสร็จแล้วจะเข้าไปที่หน้าโครงการ จากนั้นให้กด Database และสร้างฐานข้อมูลแบบ Realtime Database และเลือกเริ่มต้นในแบบทดสอบ![](https://raw.githubusercontent.com/RewiKaze/CollectingDataFromSensor-ComPro61/master/%E0%B8%A3%E0%B8%B9%E0%B8%9B/firebase2.png)
+3.จากนั้นให้เปิดไฟล์ใน Github ของเรานั่นคือ Data_Collection.ino ภายในนั้นจะมีส่วนที่เป็น '#define' ไว้เราจะทำการแก้ไขมันในแต่ละส่วนดังนี้
+
+`#define FIREBASE_HOST "<YOUR DATABASE>"` ในส่วนนี้ให้ได้ลิงค์ข้อมูลที่เราได้สร้างใน Firebase 
+![](https://raw.githubusercontent.com/RewiKaze/CollectingDataFromSensor-ComPro61/master/%E0%B8%A3%E0%B8%B9%E0%B8%9B/firebase3.png)
+`#define FIREBASE_AUTH "<YOUR SECRET TOKEN>"` ในส่วนนี้ได้จะได้จากที่เราไปเอาSecret Token ใน Firebase วิธีเอาตามรูปด้านล่างนี้
+![](https://raw.githubusercontent.com/RewiKaze/CollectingDataFromSensor-ComPro61/master/%E0%B8%A3%E0%B8%B9%E0%B8%9B/firebase4.png)
+![](https://raw.githubusercontent.com/RewiKaze/CollectingDataFromSensor-ComPro61/master/%E0%B8%A3%E0%B8%B9%E0%B8%9B/firebase5.png)
+![](https://raw.githubusercontent.com/RewiKaze/CollectingDataFromSensor-ComPro61/master/%E0%B8%A3%E0%B8%B9%E0%B8%9B/firebase6.png)
+จากนั้นนำส่วนตัวอักษรที่ได้จากช่องสี่เหลี่ยมตามภาพด้านบนนั้นมาใส่ในช่อง <YOUR SECRET TOKEN><br>
+`#define WIFI_SSID` นั้นให้ใส่ชื่อ Wifi ที่จะให้ NodeMCU นั้นเชื่อมต่อผ่านอินเทอร์เน็ตได้<br>
+`#define WIFI_PASSWORD` นั้นให้ใส่รหัส Wifi ที่จะให้ NodeMCU นั้นเชื่อมต่อผ่านอินเทอร์เน็ตได้
+4.จากนั้นให้เชื่อมต่อสายกับ NodeMCU และ Upload โค้ดเข้าไปใน NodeMCU จากนั้นตรวจสอบการทำงานว่าใน Firebase นั้นมีการอัพเดตหรือไม่
+ในกรณีอ่านไม่เข้าใจสามารถทำความเข้าใจได้ภายในลิงค์คลิปนี้ [Click!](https://www.youtube.com/watch?v=jqKW_Qo0AUM) หรือข้อมูลเพิ่มเติมได้ในลิงค์นี้ [Click!](https://www.youtube.com/watch?v=jqKW_Qo0AUM)<br>
+5.ทำการเชื่อมต่อ Firebase กับ Google Sheets วิธีการตามลิงค์นี้ [Click!](https://bit.ly/2Q9FcVF)
+  
 
 
 ## Features ฟังก์ชั่นที่ตอบสนองต่อผู้ใช้งาน
