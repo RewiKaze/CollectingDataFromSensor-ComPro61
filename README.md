@@ -42,9 +42,9 @@
 ![](https://raw.githubusercontent.com/RewiKaze/CollectingDataFromSensor-ComPro61/master/%E0%B8%A3%E0%B8%B9%E0%B8%9B/firebase6.png)
 จากนั้นนำส่วนตัวอักษรที่ได้จากช่องสี่เหลี่ยมตามภาพด้านบนนั้นมาใส่ในช่อง <YOUR SECRET TOKEN><br>
 `#define WIFI_SSID` นั้นให้ใส่ชื่อ Wifi ที่จะให้ NodeMCU นั้นเชื่อมต่อผ่านอินเทอร์เน็ตได้<br>
-`#define WIFI_PASSWORD` นั้นให้ใส่รหัส Wifi ที่จะให้ NodeMCU นั้นเชื่อมต่อผ่านอินเทอร์เน็ตได้
+`#define WIFI_PASSWORD` นั้นให้ใส่รหัส Wifi ที่จะให้ NodeMCU นั้นเชื่อมต่อผ่านอินเทอร์เน็ตได้<br><br>
 4.จากนั้นให้เชื่อมต่อสายกับ NodeMCU และ Upload โค้ดเข้าไปใน NodeMCU จากนั้นตรวจสอบการทำงานว่าใน Firebase นั้นมีการอัพเดตหรือไม่
-ในกรณีอ่านไม่เข้าใจสามารถทำความเข้าใจได้ภายในลิงค์คลิปนี้ [Click!](https://www.youtube.com/watch?v=jqKW_Qo0AUM) หรือข้อมูลเพิ่มเติมได้ในลิงค์นี้ [Click!](https://www.youtube.com/watch?v=jqKW_Qo0AUM)<br>
+ในกรณีอ่านไม่เข้าใจสามารถทำความเข้าใจได้ภายในลิงค์คลิปนี้ [Click!](https://www.youtube.com/watch?v=jqKW_Qo0AUM) หรือข้อมูลเพิ่มเติมได้ในลิงค์นี้ [Click!](https://www.youtube.com/watch?v=jqKW_Qo0AUM)<br><br>
 5.ทำการเชื่อมต่อ Firebase กับ Google Sheets วิธีการตามลิงค์นี้ [Click!](https://bit.ly/2Q9FcVF)
   
 
